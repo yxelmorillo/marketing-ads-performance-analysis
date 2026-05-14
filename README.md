@@ -1,5 +1,9 @@
 # Marketing Ads Performance Analysis
 
+🌐 Languages: [English](README.md) | [Español](README.es.md)
+
+---
+
 ## Business-Oriented Marketing Analytics Project
 
 This project analyzes digital advertising performance for a beauty/cosmetics business using SQL and Looker Studio.
