@@ -125,24 +125,41 @@ SQL files will be included in the `/sql` folder.
 
 ---
 
-## Dashboard
+## Dashboards
 
-The dashboard was created in Looker Studio to communicate the results visually and support business decision-making.
+The project includes three Looker Studio dashboards, each one connected to a specific business question.
 
-Dashboard sections include:
+### 1. Marketing Spend Efficiency Over Time
 
-- General marketing performance overview
-- Campaign performance
-- Channel comparison
-- Cost efficiency
-- Time trends
-- Key insights for decision-makers
+**Business question:**  
+Are campaigns spending efficiently over time, or is budget growth not generating proportional performance?
 
-Dashboard screenshots will be included in the `/images` folder.
+**Dashboard:**  
+[View Dashboard 1 - Marketing Spend Efficiency](https://datastudio.google.com/s/twd2OsdgIIY)
 
-Looker Studio link:
+---
 
-[Add Looker Studio dashboard link here]
+### 2. Campaigns Recommended for Additional Investment
+
+**Business question:**  
+Which campaigns should receive more budget based on CTR, CPC, clicks, campaign status, and budget share?
+
+**Dashboard:**  
+[View Dashboard 2 - Campaign Investment Decision](https://datastudio.google.com/s/kjp_b75xkqY)
+
+---
+
+### 3. Best Campaigns of 2025
+
+**Business question:**  
+Which were the best campaigns of 2025 based on their objective and efficiency?
+
+**Dashboard:**  
+[View Dashboard 3 - Best Campaigns of 2025](https://datastudio.google.com/s/hqLEkp6zFX0)
+
+---
+
+> If any dashboard link is private or restricted, dashboard screenshots are included below and in the `/images` folder.
 
 ---
 
@@ -150,11 +167,20 @@ Looker Studio link:
 
 Main insights identified during the analysis:
 
-1. [Add insight about best-performing campaign]
-2. [Add insight about cost efficiency]
-3. [Add insight about Google Ads vs Meta/Facebook Ads]
-4. [Add insight about campaign trends]
-5. [Add insight about budget allocation or optimization]
+1. **Marketing investment increased significantly over time.**  
+   The analysis showed that annual marketing spend increased strongly across several years. In 2025, investment grew by approximately 77% compared to 2024.
+
+2. **Higher investment was accompanied by stronger click performance in 2025.**  
+   Although spend increased significantly, clicks grew by approximately 111% compared to the previous year. This suggests that the additional budget was not necessarily wasted, since traffic growth outpaced spend growth.
+
+3. **Campaign investment decisions should not be based only on total clicks.**  
+   The analysis considered CTR, CPC, total clicks, campaign status, cost, and budget share to identify campaigns with better potential for additional investment.
+
+4. **The best campaign depends on the campaign objective.**  
+   Reach-focused campaigns and click-focused campaigns should not be evaluated using the same rule. The analysis separated campaigns by objective to identify stronger performers more fairly.
+
+5. **Budget allocation should be reviewed continuously.**  
+   Some campaigns may justify additional investment, but scaling should be monitored carefully to avoid increasing CPC or reducing efficiency.
 
 ---
 
@@ -162,11 +188,20 @@ Main insights identified during the analysis:
 
 Based on the analysis, the following actions are recommended:
 
-1. [Add recommendation related to budget allocation]
-2. [Add recommendation related to campaign optimization]
-3. [Add recommendation related to underperforming campaigns]
-4. [Add recommendation related to measurement or reporting]
-5. [Add recommendation related to future marketing decisions]
+1. **Increase budget gradually in campaigns with strong efficiency signals.**  
+   Campaigns with good CTR, low CPC, strong click volume, and active status should be considered for additional investment.
+
+2. **Avoid increasing budget only because a campaign has high volume.**  
+   High clicks or high reach are not enough. Campaigns should also show cost efficiency and alignment with the campaign objective.
+
+3. **Separate campaign evaluation by objective.**  
+   Reach campaigns should be evaluated mainly by reach, investment efficiency, and cost balance. Click-focused campaigns should be evaluated by link clicks, CPC, and traffic generation.
+
+4. **Monitor CPC and performance after scaling.**  
+   Before increasing budget aggressively, campaigns should be monitored to confirm that higher investment does not reduce efficiency.
+
+5. **Use dashboard reporting to support recurring marketing decisions.**  
+   The Looker Studio dashboard should be used as a recurring decision-making tool to review investment, clicks, CTR, CPC, and campaign performance over time.
 
 ---
 
