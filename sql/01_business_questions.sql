@@ -137,24 +137,131 @@ that higher budget does not reduce efficiency or increase CPC significantly.
 */
 
 
-
-
 -- ============================================================
--- 3. Which campaigns are losing performance compared to previous periods?
+-- 3. Which were the best campaigns of the year based on campaign objective and efficiency?
 -- ============================================================
 
 -- Business objective:
--- Detect campaigns that are no longer performing as well as before.
--- The goal is to identify drops in results, increased cost per result,
--- lower CTR, or declining efficiency over time.
+-- Identify the best-performing campaigns of 2025 by analyzing them according
+-- to their campaign objective. Campaigns focused on reach should be evaluated
+-- differently from campaigns focused on link clicks or interaction.
 
 -- Metrics to analyze:
--- - Results by period
--- - Spend by period
--- - Cost per result by period
--- - CTR by period
--- - CPC by period
--- - Month-over-month or week-over-week variation
+-- - Campaign objective / result indicator
+-- - Investment
+-- - Reach
+-- - Link clicks
+-- - Cost per result
+-- - Cost per click
+-- - Performance ranking by campaign objective
 
--- SQL query:
--- Paste your query below this line
+-- Original business question:
+-- Which was the best campaign of the year?
+
+-- Original SQL query adapted for a complete executable SQL Server script:
+-- This analysis identifies the best campaigns of 2025 by separating campaigns
+-- based on their main objective: reach-focused campaigns and click-focused campaigns.
+
+IF OBJECT_ID('tempdb..#campaign_metrics') IS NOT NULL
+    DROP TABLE #campaign_metrics;
+
+WITH annual_data AS (
+    SELECT
+        YEAR(Finalización) AS Año,
+        Indicador_de_resultado,
+        Nombre_de_la_campaña,
+        Costo_por_resultados AS CPR,
+        Importe_gastado_ARS AS Inversion,
+        Alcance,
+        Clics_en_el_enlace,
+        CAST((Importe_gastado_ARS / Clics_en_el_enlace) AS DECIMAL(18,2)) AS CPC
+    FROM Central
+    WHERE YEAR(Finalización) = 2025
+      AND Indicador_de_resultado IS NOT NULL
+),
+
+metrics AS (
+    SELECT
+        ROW_NUMBER() OVER(ORDER BY Nombre_de_la_campaña) AS campaign_number,
+        Indicador_de_resultado,
+        Nombre_de_la_campaña,
+        CPR,
+        Inversion,
+        Alcance,
+        Clics_en_el_enlace,
+        CPC,
+        DENSE_RANK() OVER(ORDER BY Alcance DESC) AS reach_rank,
+        DENSE_RANK() OVER(ORDER BY Inversion DESC) AS investment_rank,
+        DENSE_RANK() OVER(ORDER BY Clics_en_el_enlace DESC) AS clicks_rank,
+        DENSE_RANK() OVER(ORDER BY CPC ASC) AS cpc_rank
+    FROM annual_data
+    WHERE Clics_en_el_enlace IS NOT NULL
+      AND CPC IS NOT NULL
+)
+
+SELECT *
+INTO #campaign_metrics
+FROM metrics;
+
+
+-- Reach-focused campaigns:
+-- These campaigns were selected because their main objective was reach.
+-- The recommendation considers the balance between reach, investment,
+-- and cost efficiency.
+
+SELECT
+    campaign_number,
+    Nombre_de_la_campaña,
+    Indicador_de_resultado,
+    CPR,
+    Inversion,
+    Alcance,
+    Clics_en_el_enlace,
+    CPC,
+    reach_rank,
+    investment_rank,
+    clicks_rank,
+    cpc_rank
+FROM #campaign_metrics
+WHERE campaign_number IN (121, 190, 179)
+ORDER BY reach_rank;
+
+
+-- Click-focused campaigns:
+-- These campaigns were selected because their main objective was interaction
+-- or link clicks. The recommendation considers low CPC, reasonable investment,
+-- and strong click volume.
+
+SELECT
+    campaign_number,
+    Nombre_de_la_campaña,
+    Indicador_de_resultado,
+    CPR,
+    Inversion,
+    Alcance,
+    Clics_en_el_enlace,
+    CPC,
+    reach_rank,
+    investment_rank,
+    clicks_rank,
+    cpc_rank
+FROM #campaign_metrics
+WHERE campaign_number IN (150, 111, 110)
+ORDER BY cpc_rank;
+
+
+/*
+Business conclusion:
+
+The best campaign of the year should not be selected using a single metric.
+Campaign performance must be evaluated according to the campaign objective.
+
+For reach-focused campaigns, the strongest options were selected based on
+a strong balance between reach, investment level and cost efficiency.
+
+For click-focused or interaction campaigns, the strongest options were selected
+based on low CPC, reasonable investment and strong link click results.
+
+This analysis supports better budget allocation because it separates campaigns
+by objective instead of comparing all campaigns under the same performance rule.
+*/
