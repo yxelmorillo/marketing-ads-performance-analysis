@@ -125,49 +125,81 @@ Los archivos SQL estarán incluidos en la carpeta `/sql`.
 
 ---
 
-## Dashboard
+## Dashboards
 
-El dashboard fue creado en Looker Studio para comunicar los resultados visualmente y apoyar la toma de decisiones de negocio.
+El proyecto incluye tres dashboards en Looker Studio, cada uno conectado a una pregunta específica de negocio.
 
-Secciones del dashboard:
+### 1. Eficiencia de inversión en marketing a lo largo del tiempo
 
-- Resumen general de performance de marketing
-- Performance por campaña
-- Comparación entre canales
-- Eficiencia de costos
-- Tendencias en el tiempo
-- Insights clave para tomadores de decisión
+**Pregunta de negocio:**  
+¿Las campañas están gastando de forma eficiente a lo largo del tiempo o el crecimiento del presupuesto no está generando una mejora proporcional en performance?
 
-Link del dashboard en Looker Studio:
-
-[Agrega aquí el link del dashboard de Looker Studio]
-
-Las capturas del dashboard estarán incluidas en la carpeta `/images`.
+**Dashboard:**  
+[Ver Dashboard 1 - Eficiencia de inversión en marketing](https://datastudio.google.com/s/qabtK41N-C0)
 
 ---
 
+### 2. Campañas recomendadas para mayor inversión
+
+**Pregunta de negocio:**  
+¿En qué campañas conviene invertir más según CTR, CPC, clics, estado de campaña y participación del presupuesto?
+
+**Dashboard:**  
+[Ver Dashboard 2 - Decisión de inversión por campaña](https://datastudio.google.com/s/kqm1veof1H4)
+
+---
+
+### 3. Mejores campañas de 2025
+
+**Pregunta de negocio:**  
+¿Cuáles fueron las mejores campañas de 2025 según su objetivo y eficiencia?
+
+**Dashboard:**  
+[Ver Dashboard 3 - Mejores campañas de 2025](https://datastudio.google.com/s/hCU4Dfa7BEs)
+
+---
+
+> Si algún link del dashboard es privado o tiene acceso restringido, las capturas estarán incluidas abajo y en la carpeta `/images`.
+
+---
 ## Insights Principales
 
 Principales insights identificados durante el análisis:
 
-1. [Agrega insight sobre la campaña con mejor desempeño]
-2. [Agrega insight sobre eficiencia de costos]
-3. [Agrega insight sobre comparación entre Google Ads y Meta/Facebook Ads]
-4. [Agrega insight sobre tendencias de campaña]
-5. [Agrega insight sobre asignación de presupuesto u optimización]
+1. **La inversión en marketing aumentó de forma significativa a lo largo del tiempo.**  
+   El análisis mostró un crecimiento importante de la inversión anual. En 2025, la inversión creció aproximadamente un 77% en comparación con 2024.
 
+2. **El aumento de inversión estuvo acompañado por una mejora fuerte en clics durante 2025.**  
+   Aunque el gasto aumentó considerablemente, los clics crecieron aproximadamente un 111% frente al año anterior. Esto sugiere que el presupuesto adicional no necesariamente fue desperdiciado, ya que el crecimiento de clics superó el crecimiento de inversión.
+
+3. **La decisión de invertir más en una campaña no debe basarse solamente en clics totales.**  
+   El análisis tomó en cuenta CTR, CPC, clics, estado de campaña, costo y participación del presupuesto para identificar campañas con mayor potencial de inversión.
+
+4. **La mejor campaña depende del objetivo de la campaña.**  
+   Las campañas orientadas a alcance y las campañas orientadas a clics no deben evaluarse con la misma regla. El análisis separó las campañas por objetivo para identificar mejores performers de forma más justa.
+
+5. **La asignación de presupuesto debe revisarse de forma continua.**  
+   Algunas campañas pueden justificar mayor inversión, pero el escalamiento debe monitorearse para evitar aumentos de CPC o pérdida de eficiencia.
 ---
 
 ## Recomendaciones de Negocio
 
 A partir del análisis, se recomiendan las siguientes acciones:
 
-1. [Agrega recomendación relacionada con asignación de presupuesto]
-2. [Agrega recomendación relacionada con optimización de campañas]
-3. [Agrega recomendación relacionada con campañas de bajo rendimiento]
-4. [Agrega recomendación relacionada con medición o reporting]
-5. [Agrega recomendación relacionada con decisiones futuras de marketing]
+1. **Aumentar presupuesto de forma gradual en campañas con señales fuertes de eficiencia.**  
+   Las campañas con buen CTR, bajo CPC, buen volumen de clics y estado activo deberían considerarse para inversión adicional.
 
+2. **Evitar aumentar presupuesto solo porque una campaña tiene alto volumen.**  
+   Tener muchos clics o mucho alcance no es suficiente. La campaña también debe mostrar eficiencia de costo y alineación con su objetivo.
+
+3. **Separar la evaluación según el objetivo de campaña.**  
+   Las campañas de alcance deben evaluarse principalmente por alcance, eficiencia de inversión y balance de costo. Las campañas enfocadas en clics deben evaluarse por clics al enlace, CPC y generación de tráfico.
+
+4. **Monitorear CPC y performance después de escalar inversión.**  
+   Antes de aumentar presupuesto de forma agresiva, las campañas deben monitorearse para confirmar que la mayor inversión no reduzca la eficiencia.
+
+5. **Usar el dashboard como herramienta recurrente de decisión.**  
+   El dashboard de Looker Studio debería utilizarse para revisar periódicamente inversión, clics, CTR, CPC y performance de campañas.
 ---
 
 ## Estructura del Repositorio
