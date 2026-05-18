@@ -281,7 +281,4 @@ marketing-ads-performance-analysis/
     ├── campaign-investment-recommendations-top5.png
     ├── campaigns-2025-performance-overview.png
     ├── best-reach-campaigns-2025.png
-    └── best-clics-campaigns-2025.png
-│
-└── data/
-    └── data_dictionary.md
+    └── best-click-campaigns-2025.png
