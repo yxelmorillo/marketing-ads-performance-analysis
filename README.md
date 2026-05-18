@@ -186,6 +186,36 @@ Which were the best campaigns of 2025 based on their objective and efficiency?
 **Dashboard:**  
 [View Dashboard 3 - Best Campaigns of 2025](https://datastudio.google.com/s/hqLEkp6zFX0)
 
+## Visual Evidence
+
+#### 3.1 General Campaign Performance Overview
+
+![Campaigns 2025 performance overview](images/campaigns-2025-performance-overview.png)
+
+This table provides a general overview of 2025 campaign performance, including investment, reach, link clicks, and cost per click.
+
+This first view helps compare campaigns at a high level before separating them by campaign objective.
+
+#### 3.2 Best Reach-Focused Campaigns
+
+![Best reach campaigns 2025](images/best-reach-campaigns-2025.png)
+
+This table identifies the strongest campaigns whose main objective was reach.
+
+These campaigns were evaluated based on the balance between reach, investment level, and cost efficiency.  
+The goal was to identify campaigns that generated strong visibility without requiring disproportionately high investment.
+
+#### 3.3 Best Click-Focused Campaigns
+
+![Best click campaigns 2025](images/best-click-campaigns-2025.png)
+
+This table identifies the strongest campaigns whose main objective was link clicks or interaction.
+
+These campaigns were evaluated based on link clicks, CPC, investment level, and traffic generation.  
+The goal was to identify campaigns that generated strong traffic efficiently.
+
+This approach avoids comparing all campaigns under the same rule and supports better budget allocation decisions.
+
 ---
 
 > If any dashboard link is private or restricted, dashboard screenshots are included below and in the `/images` folder.
