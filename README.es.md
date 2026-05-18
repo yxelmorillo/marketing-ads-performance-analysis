@@ -137,9 +137,36 @@ El proyecto incluye tres dashboards en Looker Studio, cada uno conectado a una p
 **Dashboard:**  
 [Ver Dashboard 1 - Eficiencia de inversión en marketing](https://datastudio.google.com/s/qabtK41N-C0)
 
+## Evidencia Visual
+
+![Tabla de inversión y clics](images/marketing-investment-trend-table.png)
+
+Esta tabla muestra la relación entre la inversión anual en marketing y el crecimiento de clics.  
+Sirve como evidencia para analizar si los aumentos de presupuesto estuvieron acompañados por una mejora proporcional o superior en performance.
+
 ---
 
 ### 2. Campañas recomendadas para mayor inversión
+
+## Evidencia Visual
+
+#### 2.1 Vista general de costo y performance por campaña
+
+![Vista general de costo por campaña 2025](images/campaign-cost-overview-2025.png)
+
+Esta tabla muestra una vista general de la performance de las campañas y el gasto anual.  
+Compara campañas usando clics, CTR, estado de campaña, costo total, participación del presupuesto, costo por clic y ranking de costos.
+
+Esta primera vista ayuda a entender cómo se distribuyó el presupuesto entre campañas antes de tomar una recomendación de inversión.
+
+#### 2.2 Campañas recomendadas para mayor inversión
+
+![Campañas recomendadas para mayor inversión top 5](images/campaign-investment-recommendations-top5.png)
+
+Esta tabla muestra las cinco campañas recomendadas para recibir mayor inversión.  
+La recomendación se basa en una combinación de CTR, CPC, clics totales, estado de campaña, costo y porcentaje que representa sobre el presupuesto total.
+
+El objetivo no es invertir más solamente en campañas con alto volumen, sino identificar campañas que muestran un mejor equilibrio entre performance, eficiencia y potencial de escalamiento.
 
 **Pregunta de negocio:**  
 ¿En qué campañas conviene invertir más según CTR, CPC, clics, estado de campaña y participación del presupuesto?
@@ -150,6 +177,38 @@ El proyecto incluye tres dashboards en Looker Studio, cada uno conectado a una p
 ---
 
 ### 3. Mejores campañas de 2025
+
+## Evidencia Visual
+
+### 3. Mejores campañas de 2025 según objetivo y eficiencia
+
+#### 3.1 Vista general de performance de campañas
+
+![Vista general de campañas 2025](images/campaigns-2025-performance-overview.png)
+
+Esta tabla muestra una vista general de la performance de campañas de 2025, incluyendo inversión, alcance, clics al enlace y costo por clic.
+
+Esta primera vista permite comparar las campañas a nivel general antes de separarlas según su objetivo.
+
+#### 3.2 Mejores campañas enfocadas en alcance
+
+![Mejores campañas de alcance 2025](images/best-reach-campaigns-2025.png)
+
+Esta tabla identifica las campañas más fuertes cuyo objetivo principal fue el alcance.
+
+Estas campañas fueron evaluadas según el balance entre alcance, nivel de inversión y eficiencia de costo.  
+El objetivo fue identificar campañas que generaron buena visibilidad sin requerir una inversión desproporcionadamente alta.
+
+#### 3.3 Mejores campañas enfocadas en clics
+
+![Mejores campañas de clics 2025](images/best-clics-campaigns-2025.png)
+
+Esta tabla identifica las campañas más fuertes cuyo objetivo principal fue generar clics al enlace o interacción.
+
+Estas campañas fueron evaluadas según clics al enlace, CPC, nivel de inversión y generación de tráfico.  
+El objetivo fue identificar campañas que generaron tráfico de forma eficiente.
+
+Este enfoque evita comparar todas las campañas con la misma regla y permite tomar mejores decisiones de asignación de presupuesto.
 
 **Pregunta de negocio:**  
 ¿Cuáles fueron las mejores campañas de 2025 según su objetivo y eficiencia?
