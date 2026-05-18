@@ -207,7 +207,7 @@ The goal was to identify campaigns that generated strong visibility without requ
 
 #### 3.3 Best Click-Focused Campaigns
 
-![Best click campaigns 2025](images/best-click-campaigns-2025.png)
+![Best click campaigns 2025](images/best-clics-campaigns-2025.png)
 
 This table identifies the strongest campaigns whose main objective was link clicks or interaction.
 
