@@ -137,6 +137,15 @@ Are campaigns spending efficiently over time, or is budget growth not generating
 **Dashboard:**  
 [View Dashboard 1 - Marketing Spend Efficiency](https://datastudio.google.com/s/twd2OsdgIIY)
 
+## Visual Evidence
+
+### 1. Marketing Investment and Click Growth Over Time
+
+![Marketing investment trend table](images/marketing-investment-trend-table.png)
+
+This table shows the relationship between annual marketing investment and click growth.  
+It supports the analysis of whether budget increases were accompanied by proportional or stronger campaign performance.
+
 ---
 
 ### 2. Campaigns Recommended for Additional Investment
