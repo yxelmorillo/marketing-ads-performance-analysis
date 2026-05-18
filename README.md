@@ -32,15 +32,15 @@ This project approaches the analysis from a business and strategic perspective, 
 
 ## Business Questions
 
-The analysis was guided by questions such as:
+The analysis was guided by three main business questions:
 
-1. Which campaigns generated the highest number of results?
-2. Which campaigns had the best cost efficiency?
-3. Which channel performed better: Google Ads or Meta/Facebook Ads?
-4. How did campaign performance change over time?
-5. Which campaigns or ad groups should receive more budget?
-6. Which campaigns showed weak performance and should be reviewed?
-7. What recommendations can be made to improve marketing decision-making?
+1. Are campaigns spending efficiently over time, or is budget growth not generating proportional performance?
+
+2. Which campaigns should receive more budget based on CTR, CPC, clicks, campaign status, and budget share?
+
+3. Which were the best campaigns of 2025 based on their objective and efficiency?
+
+These questions were designed to support better marketing investment decisions, not only to describe campaign metrics.
 
 ---
 
@@ -270,19 +270,18 @@ Based on the analysis, the following actions are recommended:
 marketing-ads-performance-analysis/
 │
 ├── README.md
+├── README.es.md
 │
 ├── sql/
-│   ├── 01_business_questions.sql
-│   ├── 02_data_cleaning.sql
-│   └── 03_marketing_analysis.sql
+│   └── 01_business_questions.sql
 │
-├── dashboard/
-│   └── looker_studio_link.md
-│
-├── images/
-│   ├── dashboard_overview.png
-│   ├── campaign_performance.png
-│   └── channel_comparison.png
+└── images/
+    ├── marketing-investment-trend-table.png
+    ├── campaign-cost-overview-2025.png
+    ├── campaign-investment-recommendations-top5.png
+    ├── campaigns-2025-performance-overview.png
+    ├── best-reach-campaigns-2025.png
+    └── best-clics-campaigns-2025.png
 │
 └── data/
     └── data_dictionary.md
