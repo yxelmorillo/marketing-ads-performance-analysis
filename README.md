@@ -156,6 +156,26 @@ Which campaigns should receive more budget based on CTR, CPC, clicks, campaign s
 **Dashboard:**  
 [View Dashboard 2 - Campaign Investment Decision](https://datastudio.google.com/s/kjp_b75xkqY)
 
+## Visual Evidence
+
+#### 2.1 Campaign Cost and Performance Overview
+
+![Campaign cost overview 2025](images/campaign-cost-overview-2025.png)
+
+This table provides a full overview of campaign performance and annual spending.  
+It compares campaigns using clicks, CTR, campaign status, total cost, budget share, cost per click, and cost ranking.
+
+This first view helps identify how the budget was distributed across campaigns before making an investment recommendation.
+
+#### 2.2 Campaigns Recommended for Additional Investment
+
+![Campaign investment recommendations top 5](images/campaign-investment-recommendations-top5.png)
+
+This table shows the five campaigns recommended for additional investment.  
+The recommendation is based on a combination of CTR, CPC, total clicks, campaign status, cost, and percentage of total budget.
+
+The goal is not to invest more only in campaigns with high volume, but to identify campaigns that show a stronger balance between performance, efficiency, and potential to scale.
+
 ---
 
 ### 3. Best Campaigns of 2025
