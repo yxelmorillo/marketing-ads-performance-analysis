@@ -148,6 +148,12 @@ Sirve como evidencia para analizar si los aumentos de presupuesto estuvieron aco
 
 ### 2. Campañas recomendadas para mayor inversión
 
+**Pregunta de negocio:**  
+¿En qué campañas conviene invertir más según CTR, CPC, clics, estado de campaña y participación del presupuesto?
+
+**Dashboard:**  
+[Ver Dashboard 2 - Decisión de inversión por campaña](https://datastudio.google.com/s/kqm1veof1H4)
+
 ## Evidencia Visual
 
 #### 2.1 Vista general de costo y performance por campaña
@@ -168,15 +174,15 @@ La recomendación se basa en una combinación de CTR, CPC, clics totales, estado
 
 El objetivo no es invertir más solamente en campañas con alto volumen, sino identificar campañas que muestran un mejor equilibrio entre performance, eficiencia y potencial de escalamiento.
 
-**Pregunta de negocio:**  
-¿En qué campañas conviene invertir más según CTR, CPC, clics, estado de campaña y participación del presupuesto?
-
-**Dashboard:**  
-[Ver Dashboard 2 - Decisión de inversión por campaña](https://datastudio.google.com/s/kqm1veof1H4)
-
 ---
 
 ### 3. Mejores campañas de 2025
+
+**Pregunta de negocio:**  
+¿Cuáles fueron las mejores campañas de 2025 según su objetivo y eficiencia?
+
+**Dashboard:**  
+[Ver Dashboard 3 - Mejores campañas de 2025](https://datastudio.google.com/s/hCU4Dfa7BEs)
 
 ## Evidencia Visual
 
@@ -209,12 +215,6 @@ Estas campañas fueron evaluadas según clics al enlace, CPC, nivel de inversió
 El objetivo fue identificar campañas que generaron tráfico de forma eficiente.
 
 Este enfoque evita comparar todas las campañas con la misma regla y permite tomar mejores decisiones de asignación de presupuesto.
-
-**Pregunta de negocio:**  
-¿Cuáles fueron las mejores campañas de 2025 según su objetivo y eficiencia?
-
-**Dashboard:**  
-[Ver Dashboard 3 - Mejores campañas de 2025](https://datastudio.google.com/s/hCU4Dfa7BEs)
 
 ---
 
